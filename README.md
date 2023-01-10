@@ -2,6 +2,15 @@
 
 This template should help get you started developing with Vue 3 in Vite.
 
+# Errors spotted
+
+- 10%10% produces an error
+- 10%x10 not currently possible - this might introduce errors of removing operations
+- 10x10%10 shouldn't be possible
+- 10x/ should evaluate to 10/ rather than stopping input at 10x
+- multiple ... possible at the moment
+- no output of what has just been calucated at the moment
+
 ## Recommended IDE Setup
 
 [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
