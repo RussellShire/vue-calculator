@@ -1,4 +1,6 @@
 <script>
+import evaluateString from "./components/calculate";
+
 export default {
   data() {
     return {
@@ -7,24 +9,29 @@ export default {
       operations: ["%", "/", "x", "-", "+"],
     };
   },
+
   methods: {
     addToCalculation(input) {
       const lastInput = this.calculation.slice(-1);
       const ops = this.operations;
 
       // checking for repeat operations inputs
-      if (ops.includes(lastInput) && ops.includes(input)) { 
+      if (ops.includes(lastInput) && ops.includes(input)) {
         return;
       } else {
         this.calculation += input;
       }
     },
+
     deleteLast() {
-      const calc = this.calculation;
-      this.calculation = calc.slice(0, -1);
+      this.calculation = this.calculation.slice(0, -1);
     },
+
     clearAll() {
       this.calculation = "";
+    },
+    calculate() {
+      this.calculation = evaluateString(this.calculation);
     },
   },
 };
