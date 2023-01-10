@@ -30,8 +30,9 @@ export default {
     clearAll() {
       this.calculation = "";
     },
+
     calculate() {
-      this.calculation = evaluateString(this.calculation);
+      this.calculation = evaluateString(this.calculation).toString();
     },
   },
 };
