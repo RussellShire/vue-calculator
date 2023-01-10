@@ -2,22 +2,38 @@
 export default {
   data() {
     return {
-      msg: "",
+      calculation: "",
       buttons: ["%", "/", 7, 8, 9, "x", 4, 5, 6, "-", 1, 2, 3, "+", ".", 0],
+      operations: ["%", "/", "x", "-", "+"],
     };
   },
   methods: {
-    addToCalculation(button) {
-      this.msg += button;
+    addToCalculation(input) {
+      const lastInput = this.calculation.slice(-1);
+      const ops = this.operations;
+
+      // checking for repeat operations inputs
+      if (ops.includes(lastInput) && ops.includes(input)) { 
+        return;
+      } else {
+        this.calculation += input;
+      }
+    },
+    deleteLast() {
+      const calc = this.calculation;
+      this.calculation = calc.slice(0, -1);
+    },
+    clearAll() {
+      this.calculation = "";
     },
   },
 };
 </script>
 
 <template>
-  <h1 class="output">{{ msg }}</h1>
+  <h1 class="output">{{ calculation }}</h1>
   <div class="button-grid">
-    <button class="operator button" @click="clear">AC</button>
+    <button class="operator button" @click="clearAll">AC</button>
     <button class="operator button" @click="toggleNegativePositive">
       (-/+)
     </button>
