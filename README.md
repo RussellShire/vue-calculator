@@ -4,6 +4,7 @@ This template should help get you started developing with Vue 3 in Vite.
 
 # Errors spotted
 
+- You can currently add to a string after you've got an answer, should be operators only after ans, pressing a number should reset
 - 10%10% produces an error
 - 10%x10 not currently possible - this might introduce errors of removing operations
 - 10x10%10 shouldn't be possible
