@@ -10,6 +10,7 @@ This template should help get you started developing with Vue 3 in Vite.
 - 10x/ should evaluate to 10/ rather than stopping input at 10x
 - multiple ... possible at the moment
 - no output of what has just been calucated at the moment
+- you can currently delete the numbers off the end of an answer
 
 ## Recommended IDE Setup
 

@@ -36,10 +36,21 @@ const evaluateString = (calc) => {
             // operationsClone.splice(operationsClone.indexOf(op), 1);
             operations.splice(operations[operations.indexOf(op) - 1]);
             break;
-          case "+":
-            break;
-          case "-":
-            break;
+          //   case "+":
+          //     console.log(nums);
+          //     console.log(mapIndex);
+          //     nums[mapIndex - 2] = nums[mapIndex - 1] * (nums[mapIndex - 1] / 100);
+
+          //     nums.splice(mapIndex - 1, 2); // removes the first number the operation was performed on leaving only the calcualted result
+          //     // operationsClone.splice(operationsClone.indexOf(op), 1);
+          //     operations.splice(operations[operations.indexOf(op) - 1]);
+          //     break;
+          //   case "-":
+          //     nums[mapIndex - 2] = nums[mapIndex - 1] / (nums[mapIndex - 1] / 100);
+          //     nums.splice(mapIndex - 1, 2); // removes the first number the operation was performed on leaving only the calcualted result
+          //     // operationsClone.splice(operationsClone.indexOf(op), 1);
+          //     operations.splice(operations[operations.indexOf(op) - 1]);
+          //     break;
         }
       }
 
