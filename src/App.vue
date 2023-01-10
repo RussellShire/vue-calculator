@@ -6,6 +6,11 @@ export default {
       buttons: ["%", "/", 7, 8, 9, "x", 4, 5, 6, "-", 1, 2, 3, "+", ".", 0],
     };
   },
+  methods: {
+    addToCalculation(button) {
+      this.msg += button;
+    },
+  },
 };
 </script>
 
@@ -18,7 +23,7 @@ export default {
     </button>
 
     <template v-for="button in buttons" :key="button.id">
-      <button class="numbers button" @click="msg += button">
+      <button class="numbers button" @click="addToCalculation(button)">
         {{ button }}
       </button>
     </template>
@@ -49,6 +54,7 @@ header {
   background-color: #abc8c7;
   border: none;
   border-radius: 50%;
+  font-size: 1.5rem;
   transition: opacity 1s;
 }
 
