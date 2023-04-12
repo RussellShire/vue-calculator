@@ -6,6 +6,29 @@ This is one of several calculators I've built to learn different JavaScript fram
 - React Calculator: https://github.com/RussellShire/react-calculator
 - Svelte Calculator: https://github.com/RussellShire/svelte-calculator
 
+## Specification
+Required functionality:
+
+- Addition
+
+- Subtraction
+
+- Division
+
+- Multiplication
+
+- Percentage
+
+- AC (All clear, i.e., reset)
+
+- CE/C (Clear entry, i.e., the value currently inputted)
+
+- 9 digit max
+
+- +/- toggle
+
+Additionally: The application should be mobile-first, but usable on any device. Your implementation of the design should be responsive, making full use of the display area available. Above an appropriate screen width (e.g. 768px), you should show a scientific calculator layout (the additional buttons don’t need to actually function!)
+
 ## Usage
 
 ```sh
