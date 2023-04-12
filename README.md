@@ -1,27 +1,12 @@
 # vue-calculator
 
-This template should help get you started developing with Vue 3 in Vite.
+A calculator built in Vue.
 
-# Errors spotted
+This is one of several calculators I've built to learn different JavaScript frameworks.
+- React Calculator: https://github.com/RussellShire/react-calculator
+- Svelte Calculator: https://github.com/RussellShire/svelte-calculator
 
-- You can currently add to a string after you've got an answer, should be operators only after ans, pressing a number should reset
-- 10%10% produces an error
-- 10%x10 not currently possible - this might introduce errors of removing operations
-- 10x10%10 shouldn't be possible
-- 10x/ should evaluate to 10/ rather than stopping input at 10x
-- multiple ... possible at the moment
-- no output of what has just been calucated at the moment
-- you can currently delete the numbers off the end of an answer
-
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
+## Usage
 
 ```sh
 npm install
