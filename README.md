@@ -1,4 +1,4 @@
-# vue-calculator
+# Vue Calculator
 
 A calculator built in Vue.
 
